@@ -1,0 +1,33 @@
+AGROPESQUISA — PROJETO ANDROID NATIVO
+
+Este é um projeto Android Studio (Kotlin + WebView) que empacota a versão aprovada do AgroPesquisa em um aplicativo Android próprio.
+
+RECURSOS
+- Nome e ícone AgroPesquisa.
+- Abre em tela de aplicativo, sem Chrome.
+- Base inicial incorporada ao HTML.
+- Pesquisa por produto, doença, praga e princípio ativo.
+- Armazenamento local no aparelho (localStorage).
+- Importação de Excel XLSX pelo seletor de arquivos do Android.
+- Mesclagem da planilha: atualiza registros correspondentes, adiciona novos e mantém os demais.
+- Funciona sem internet; não solicita permissão de internet.
+
+COMO GERAR O APK
+1. Instale o Android Studio em um computador.
+2. Extraia este ZIP.
+3. No Android Studio, escolha Open e selecione a pasta AgroPesquisa_Android.
+4. Aguarde o Gradle Sync (será necessário internet na primeira sincronização para baixar ferramentas).
+5. Conecte o Motorola por USB com Depuração USB habilitada, ou use Build > Build Bundle(s) / APK(s) > Build APK(s).
+6. O APK de teste será gerado em app/build/outputs/apk/debug/app-debug.apk.
+7. Transfira o APK para o Motorola e abra-o para instalar. Se solicitado, permita instalar apps dessa fonte.
+
+OBSERVAÇÕES
+- Este pacote contém o projeto-fonte Android, não um APK já compilado. O ambiente em que foi preparado não possui Android SDK/Gradle, portanto não é possível compilar e testar o APK aqui.
+- Os dados adicionados/importados ficam salvos no armazenamento local do aplicativo. Para não perder dados ao desinstalar, exporte uma cópia regularmente.
+- A importação foi configurada para aceitar planilhas XLSX; confira o fluxo de seleção no aparelho após compilar.
+- Doses e indicações devem ser sempre conferidas na bula vigente e no registro oficial antes de qualquer aplicação.
+
+IDENTIFICAÇÃO DO APP
+- Nome exibido: AgroPesquisa
+- Pacote Android: com.agropesquisa.app
+- Ícone: folha verde + lupa em fundo verde escuro

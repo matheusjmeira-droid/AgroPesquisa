@@ -1,0 +1,25 @@
+AGROPESQUISA — COMPILAR APK PELO CELULAR COM GITHUB
+
+O que este projeto é:
+Projeto-fonte Android. O APK será gerado automaticamente pelo GitHub Actions (na nuvem).
+
+PASSO A PASSO PELO CELULAR
+1. Baixe e extraia este ZIP no celular, usando o app Arquivos.
+2. No navegador, entre em https://github.com e faça login.
+3. Toque no + e escolha New repository.
+4. Nome: AgroPesquisa
+5. Marque Public (necessário para uso gratuito simples do GitHub Actions) e toque Create repository.
+6. No repositório, toque Add file > Upload files.
+7. Envie TODOS os arquivos e pastas que estão dentro da pasta AgroPesquisa_Android extraída. Atenção: inclua também a pasta oculta .github (com a pasta workflows e o arquivo android.yml). Se o seletor não mostrar pastas ocultas, será preciso ativar "mostrar arquivos ocultos" no app Arquivos ou enviar pelo navegador em modo computador.
+8. Na mensagem de commit, escreva "Adicionar projeto Android" e toque Commit changes.
+9. Abra a aba Actions do repositório. O fluxo "Gerar APK AgroPesquisa" deverá iniciar automaticamente. Se não iniciar, abra o fluxo e toque Run workflow.
+10. Aguarde ficar verde (sucesso). Abra a execução concluída, desça até Artifacts e baixe "AgroPesquisa-APK".
+11. Extraia o ZIP do artefato. Dentro estará app-debug.apk.
+12. Abra o APK no Motorola e autorize a instalação pelo navegador/Arquivos, se o Android pedir.
+
+IMPORTANTE
+- Não compartilhe senha, código de autenticação ou token do GitHub no chat.
+- Para facilitar o envio pelo celular, mantenha a pasta .github; ela contém a automação que gera o APK.
+- Se o upload do GitHub pelo celular não aceitar pastas, use o navegador em "Versão para computador".
+- O APK é de teste (debug), não publicado na Play Store.
+- A primeira compilação pode levar alguns minutos.
